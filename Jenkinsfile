@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent {
+       label 'Test'   
+    }
     environment {
         MY_VERSION = readFile 'Version'
     }
